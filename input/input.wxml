@@ -1,0 +1,21 @@
+<!--valid input 组件-->
+<view class="{{'valid_input_content flex'}}">
+  <slot name="label"></slot>
+  <input placeholder="{{placeHolder}}" 
+         value="{{initValue}}"
+         class="valid_input valid_input_selfclass" 
+         type="{{type}}" 
+         data-validType="{{validType}}"
+         data-validToast="{{validToast}}"
+         password="{{isPassword}}"
+         disabled="{{isDisabled}}"
+         maxlength="{{maxLength}}"
+         adjust-position="{{adjustPosition}}"
+         confirm-type="{{confirmType}}"
+         focus="{{focus}}"
+         placeholder-class="{{placeholderClass}}"
+         bindinput=input
+  >
+  </input>
+  <slot name="extro"></slot>
+</view>

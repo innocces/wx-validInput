@@ -1,0 +1,31 @@
+/* valid input css */
+
+.flex{ 
+  display:flex; 
+  align-items: center;
+}
+.flex-center{ 
+  justify-content: center; 
+}
+.flex-start{
+  justify-content: flex-start;
+}
+.flex-between{
+  justify-content: space-between;
+}
+.flex-around{
+  justify-content: space-around;
+}
+
+.valid_input_content{
+  width:100%;
+  padding:0 24rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+}
+
+.valid_input{
+  width:80%;
+  height: 65rpx;
+  transition: border .3s linear;
+}
