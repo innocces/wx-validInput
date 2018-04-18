@@ -42,21 +42,5 @@ export default {
   placeholderClass:{
     type:String,
     value:'input-placeholder'
-  },
-  bindinput:{
-    type: Function,
-    value:void(0)
-  },
-  bindfocus:{
-    type: Function,
-    value: void(0)
-  },
-  bindblur:{
-    type: Function,
-    value: void(0)
-  },
-  bindconfirm:{
-    type:Function,
-    value: void(0)
   }
 };

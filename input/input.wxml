@@ -15,6 +15,10 @@
          focus="{{focus}}"
          placeholder-class="{{placeholderClass}}"
          bindinput=input
+         bindchange=change
+         bindfocus=focus
+         bindconfirm=confirm
+         bindblur=blur
   >
   </input>
   <slot name="extro"></slot>

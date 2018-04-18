@@ -1,6 +1,5 @@
 let properties = require('./properties').default;
 let data = require('./data').default;
-console.log(properties)
 Component({
   options: {
     multipleSlots: true
@@ -12,10 +11,20 @@ Component({
       return Object.prototype.toString.call(handler) == "[Object,Object]";
     },
     input(event){
-        let {bindinput} = this.data; 
-        console.log(event);
-        console.log(bindinput,this.data)
-        this.checkFunction(bindinput) ? bindinput(event) : void(0);
+      this.change(event);
+      this.triggerEvent('input', event, event); 
+    },
+    focus(event){
+      this.triggerEvent('focus', event, event); 
+    },
+    change(event){
+      this.triggerEvent('change', event, event); 
+    },
+    blur(event){
+      this.triggerEvent('blur', event, event); 
+    },
+    confirm(event){
+      this.triggerEvent('confirm', event, event); 
     }
   },
   externalClasses:['valid_input_selfclass']
