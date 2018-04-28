@@ -2,13 +2,13 @@
 <view class="{{'valid_input_content flex'}}">
   <slot name="label"></slot>
   <input placeholder="{{placeHolder}}" 
-         value="{{initValue}}"
-         class="valid_input valid_input_selfclass" 
+         value="{{value}}"
+         class="{{error?'valid_input valid_error_tip':'valid_input'}}" 
          type="{{type}}" 
          data-validType="{{validType}}"
          data-validToast="{{validToast}}"
-         password="{{isPassword}}"
-         disabled="{{isDisabled}}"
+         password="{{password}}"
+         disabled="{{disabled}}"
          maxlength="{{maxLength}}"
          adjust-position="{{adjustPosition}}"
          confirm-type="{{confirmType}}"

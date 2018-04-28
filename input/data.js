@@ -1,4 +1,4 @@
 export default {
-  isPassword:false,
-  isDisabled:false,
+  value: '',
+  error:false
 }
