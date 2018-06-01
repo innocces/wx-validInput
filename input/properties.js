@@ -58,5 +58,9 @@ export default {
   disabled:{ // 是否禁用
     type:Boolean,
     value:false
+  },
+  name:{ // 作为表单提交时获取name
+    type:String,
+    value:''
   }
 };

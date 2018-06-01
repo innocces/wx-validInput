@@ -3,6 +3,7 @@ let data = require('./data').default;
 let validate = require('./validate').default;
 
 Component({
+  behaviors: ['wx://form-field'], // 获取form表单提交能力
   options: {
     multipleSlots: true
   },
@@ -34,12 +35,17 @@ Component({
       this.timeToValid('change',event);
     },
     blur(event){
+      let { detail:{ value } } = event;
+      this.setData({value})
       this.triggerEvent('blur', event, event); 
       this.timeToValid('blur',event);
     },
     confirm(event){
       this.triggerEvent('confirm', event, event); 
       this.timeToValid('confirm',event);
+    },
+    submit(event){
+      console.log(11111)
     },
     // 校验函数
     valid(event){

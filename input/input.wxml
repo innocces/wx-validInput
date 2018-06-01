@@ -19,6 +19,8 @@
          bindfocus=focus
          bindconfirm=confirm
          bindblur=blur
+         bindsubmit=submit
+         name="{{name}}"
   >
   </input>
   <slot name="extro"></slot>
