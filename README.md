@@ -23,8 +23,9 @@
             bindchange="change" 
             bindblur="blur" 
             bindfocus="focus"
+            name="validName"  // 用于用户作为表单事件提交时获取value的name键
             >
-</validInput> 
+    </validInput> 
 ```
 
 ## 校验类型
